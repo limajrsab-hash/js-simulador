@@ -137,6 +137,76 @@ proporções não convencionais), compatíveis com painéis modulares.
 
 ---
 
+## 8. Dados vivos do programa (varredura de 05/08/2026)
+
+Fonte: release oficial `js26_release_a4_aa.pdf`, páginas *Apresentação*,
+*Proposições* e *Linha do tempo* do site.
+
+### Escala — os números que provam a dimensão
+
+| Dado | Valor |
+| --- | --- |
+| Escolas participantes (2025) | **4.202** — recorde |
+| Estudantes participantes (2025) | **~170 mil** |
+| Alunos mobilizados desde 2008 | **~2 milhões** |
+| Posição no país | **Maior concurso de redação com premiação do Brasil** |
+| Jovens senadores por edição | **27** (um por estado + DF) |
+| Participação feminina (2025) | **21 das 27** redações vencedoras escritas por meninas |
+| Origem dos selecionados (2025) | **8 em cada 10** viviam em cidades do interior |
+| Idade máxima | 19 anos completos até 31/12 do ano da edição |
+
+### Edição 2026 — em curso
+
+- **Tema:** *"Democracia nas redes sociais: como construir um debate saudável"*
+- **Objetivo declarado:** incentivar a educação midiática, combater a
+  desinformação e o discurso de ódio; em ano de eleições gerais, fortalecer a
+  liberdade de expressão e a valorização da diversidade de opiniões no
+  ambiente digital.
+- **Semana de Vivência Legislativa: 17 a 21 de agosto de 2026.**
+- Redações elaboradas em ambiente escolar, sob supervisão de professor
+  orientador, entre 02/02 e 17/04/2026.
+- Vencedores **e seus professores orientadores** têm todas as despesas pagas.
+
+### As três comissões temáticas (nomes que carregam história)
+
+Os jovens são distribuídos em três comissões batizadas com nomes de brasileiros:
+
+| Comissão | Área | Quem foi |
+| --- | --- | --- |
+| **Nísia Floresta** | Meio ambiente e Saúde | Primeira feminista brasileira (1810–1885); escreveu *Direitos das mulheres e injustiça dos homens* aos 22 anos; atuou nas campanhas abolicionista e republicana. |
+| **Sobral Pinto** | Direitos fundamentais / Ciência e Saúde | Jurista (1893–1991), o "Senhor Justiça"; advogou por presos políticos nas ditaduras; aos 90 anos discursou no Comício da Candelária pelas Diretas Já. |
+| **Cecília Meireles** | Educação | Poetisa e jornalista (1901–1964); fundou em 1934 a **primeira biblioteca infantil do Brasil**. |
+
+### Frutos reais — propostas dos jovens senadores
+
+Exemplos de proposições aprovadas em plenário jovem e encaminhadas à CDH:
+
+- **Vale-Livro** para alunos do ensino fundamental e médio da rede pública.
+- **Selo Eco Brasil (ECOSAMBA)** de responsabilidade socioambiental + cadastro
+  nacional de empresas sancionadas por práticas lesivas ao meio ambiente.
+- **Rotulagem e publicidade de alimentos ultraprocessados.**
+- **ENAS** — Exame Nacional de Avaliação Seriada para acesso ao ensino superior.
+- **Vedação do anonimato** na manifestação do pensamento em meios de
+  comunicação social eletrônica (art. 5º, IV, da Constituição) — tema que
+  dialoga diretamente com a pauta de 2026.
+- Avaliação **auditiva e oftalmológica** obrigatória ao ingressar no ensino
+  fundamental.
+- **Mês Nacional de Valorização da Cultura Brasileira** — proposta
+  **TRANSFORMADA EM PROJETO DE LEI DO SENADO em 16/04/2024**. É a prova
+  documental de que a ideia de um jovem vira matéria legislativa de verdade.
+
+### Cronologia essencial
+
+- **2008** — 1º Concurso de Redação do Senado. Conceito: "conhecimento".
+- **2011** — 4ª edição: nasce o **Projeto Jovem Senador**; os vencedores passam
+  a exercer um mandato simulado (3 dias, à época). Idealização com participação
+  da então Secretária-Geral da Mesa, Claudia Lyra.
+- **2020** — concurso e semana presencial adiados pela pandemia de covid-19.
+- **2022** — tema do Bicentenário da Independência.
+- **2026** — edição em curso; 18 edições do concurso desde 2008.
+
+---
+
 ## 7. Referências
 
 - Site oficial: https://www12.senado.leg.br/jovemsenador
