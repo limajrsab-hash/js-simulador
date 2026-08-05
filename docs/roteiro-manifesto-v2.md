@@ -77,6 +77,18 @@ setenta mil para vinte e sete. Os números do programa ditos como poesia.
 | **Rodapé** | Contadores subindo em tempo real: `4.202 ESCOLAS` → `170.000 ESTUDANTES` → `2.000.000 DESDE 2008`. |
 | **Áudio** | Batida eletrônica sutil entra e cresce. Camada de vozes ao fundo — muitas, indistintas, como uma sala cheia. |
 
+**Beat final do bloco — a festa surpresa (últimos 8s).** A música abre, a batida
+sai e entra som de escola em festa. No painel principal, a porta de uma sala de
+aula se abrindo: faixa, confete, a comunidade escolar reunida. Nas verticais, o
+mesmo instante repetido em seis escolas diferentes.
+
+> *Nota de produção:* o anúncio dos vencedores é **deliberadamente programado**
+> para que as escolas montem uma festa surpresa — muitas em festa junina ou
+> cerimônia, com professores, familiares e a comunidade (George Cardim,
+> 08/06/2026). É o detalhe mais humano do programa e nunca foi usado em peça
+> institucional. **Priorizar registro real das escolas**; geração por IA só
+> como último recurso, e sempre em plano aberto, sem rostos identificáveis.
+
 **Locução** *(o ritmo acelera; cada número tem uma pausa antes)*
 > "A pergunta chegou a quatro mil, duzentas e duas escolas.
 > Cento e setenta mil estudantes sentaram para escrever.
@@ -87,7 +99,11 @@ setenta mil para vinte e sete. Os números do programa ditos como poesia.
 > Vinte e sete chegaram até aqui.
 > Uma de cada estado. Uma do Distrito Federal.
 > Oito em cada dez vieram do interior.
-> E, na última edição, vinte e uma das vinte e sete foram escritas por meninas."
+> E, na última edição, vinte e uma das vinte e sete foram escritas por meninas.
+>
+> *(a música abre; entra som de escola em festa)*
+>
+> E, em cada uma das vinte e sete escolas, alguém preparou uma festa surpresa."
 
 ---
 
