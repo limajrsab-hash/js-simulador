@@ -180,11 +180,11 @@ document.getElementById("btnPlay").onclick = alternarPlay;
 document.getElementById("btnReiniciar").onclick = reiniciar;
 document.getElementById("btnMudo").onclick = alternarMudo;
 
-// erro em qualquer vídeo -> placeholder na superfície correspondente
+// erro em qualquer vídeo -> placeholder nas superfícies daquele arquivo
 for (const v of videos) {
   v.addEventListener("error", () => {
-    const surf = v.closest(".surf");
-    if (surf) surf.classList.add("falha");
+    document.querySelectorAll(`[data-arquivo="${FONTES[v.id]}"]`)
+      .forEach(s => s.classList.add("falha"));
   });
 }
 
