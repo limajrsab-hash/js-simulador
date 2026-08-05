@@ -56,22 +56,21 @@
     background: #000; border: 2px solid #16273f;
     box-shadow: 0 0 24px rgba(240, 125, 0, .12), inset 0 0 8px #000;
   }
-  .surf video, .surf canvas { width: 100%; height: 100%; object-fit: fill; display: block; }
+  .surf video { width: 100%; height: 100%; object-fit: fill; display: block; }
   /* testeira 8,0 x 1,0 m — topo, centrada */
   .testeira { width: calc(var(--m) * 8); height: calc(var(--m) * 1);
               left: calc(var(--m) * 2); top: 0; }
   /* painel principal 6,0 x 3,5 m — abaixo da testeira, centrado */
   .principal { width: calc(var(--m) * 6); height: calc(var(--m) * 3.5);
                left: calc(var(--m) * 3); top: calc(var(--m) * 1.3); }
-  /* verticais 0,8 x 2,5 m — 3 por lado */
-  .vertical { width: calc(var(--m) * .8); height: calc(var(--m) * 2.5);
-              top: calc(var(--m) * 1.7); }
-  .v1 { left: calc(var(--m) * 0.0); }
-  .v2 { left: calc(var(--m) * 0.95); }
-  .v3 { left: calc(var(--m) * 1.9); }
-  .v4 { right: calc(var(--m) * 1.9); }
-  .v5 { right: calc(var(--m) * 0.95); }
-  .v6 { right: calc(var(--m) * 0.0); }
+  /* verticais 0,8 x 2,5 m — 3 por lado, em alas escalonadas subindo ao telão */
+  .vertical { width: calc(var(--m) * .8); height: calc(var(--m) * 2.5); }
+  .v1 { left: calc(var(--m) * 0.0);  top: calc(var(--m) * 2.0); }
+  .v2 { left: calc(var(--m) * 1.05); top: calc(var(--m) * 1.6); }
+  .v3 { left: calc(var(--m) * 2.1);  top: calc(var(--m) * 1.2); }
+  .v4 { right: calc(var(--m) * 2.1);  top: calc(var(--m) * 1.2); }
+  .v5 { right: calc(var(--m) * 1.05); top: calc(var(--m) * 1.6); }
+  .v6 { right: calc(var(--m) * 0.0);  top: calc(var(--m) * 2.0); }
   /* praticável + rodapé 6,0 x 0,5 m na face frontal */
   .praticavel { position: absolute; left: calc(var(--m) * 2.2); right: calc(var(--m) * 2.2);
                 top: calc(var(--m) * 4.9); height: calc(var(--m) * .3);
@@ -83,7 +82,7 @@
             letter-spacing: .05em; white-space: nowrap; }
   .medida::before { content: "⟵ "; } .medida::after { content: " ⟶"; }
   body:not(.view-frontal) .medida { display: none; }
-  .surf.falha video, .surf.falha canvas { display: none; }
+  .surf.falha video { display: none; }
   .surf.falha::after {
     content: "vídeo não encontrado:\A" attr(data-arquivo);
     white-space: pre; display: grid; place-items: center; text-align: center;
@@ -139,19 +138,18 @@
     <video id="vPrincipal" muted loop playsinline></video>
     <span class="medida" style="bottom:-22px; left:32%">6,0 m × 3,5 m</span>
   </div>
-  <div class="surf vertical v1" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas></div>
-  <div class="surf vertical v2" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas></div>
-  <div class="surf vertical v3" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas>
+  <div class="surf vertical v1" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video></div>
+  <div class="surf vertical v2" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video></div>
+  <div class="surf vertical v3" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video>
     <span class="medida" style="bottom:-22px; left:-60%">0,80 × 2,50 m (×6)</span></div>
-  <div class="surf vertical v4" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas></div>
-  <div class="surf vertical v5" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas></div>
-  <div class="surf vertical v6" data-arquivo="Vídeo Tela Alunos.mp4"><canvas width="256" height="384"></canvas></div>
+  <div class="surf vertical v4" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video></div>
+  <div class="surf vertical v5" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video></div>
+  <div class="surf vertical v6" data-arquivo="Vídeo Tela Alunos.mp4"><video class="vAluno" muted loop playsinline></video></div>
   <div class="praticavel"></div>
   <div class="surf rodape" data-arquivo="tela_bandeiras.mp4">
     <video id="vRodape" muted loop playsinline></video>
     <span class="medida" style="bottom:-22px; left:35%">6,0 m × 0,50 m</span>
   </div>
-  <video id="vAlunos" muted loop playsinline hidden></video>
 </div>
     </div>
   </main>
@@ -167,29 +165,27 @@ const FONTES = {
   vPrincipal: "Telão - Identidade Visual.mp4",
   vTesteira:  "Testeira 1.mp4",
   vRodape:    "tela_bandeiras.mp4",
-  vAlunos:    "Vídeo Tela Alunos.mp4",
 };
-const videos = Object.keys(FONTES).map(id => document.getElementById(id));
+const ARQ_ALUNOS = "Vídeo Tela Alunos.mp4";
+const principais = Object.keys(FONTES).map(id => document.getElementById(id));
+const alunos = [...document.querySelectorAll(".vertical video")];
+const videos = [...principais, ...alunos];
+
+/* cada vertical roda o mesmo vídeo defasado — 6 jovens diferentes ao mesmo tempo */
+function defasarAluno(v, i) {
+  if (v.duration) v.currentTime = (v.duration / alunos.length) * i;
+}
 
 function iniciarVideos() {
-  for (const v of videos) {
+  for (const v of principais) {
     v.src = encodeURI(FONTES[v.id]);
     v.play().catch(() => {/* autoplay mudo raramente falha; controles cobrem */});
   }
-  pintarVerticais();
-}
-
-function pintarVerticais() {
-  const alvo = document.getElementById("vAlunos");
-  const telas = [...document.querySelectorAll(".vertical canvas")]
-    .map(c => c.getContext("2d"));
-  (function quadro() {
-    if (alvo.readyState >= 2) {
-      for (const ctx of telas)
-        ctx.drawImage(alvo, 0, 0, ctx.canvas.width, ctx.canvas.height);
-    }
-    requestAnimationFrame(quadro);
-  })();
+  alunos.forEach((v, i) => {
+    v.src = encodeURI(ARQ_ALUNOS);
+    v.addEventListener("loadedmetadata", () => defasarAluno(v, i), { once: true });
+    v.play().catch(() => {});
+  });
 }
 
 function alternarPlay() {
@@ -199,13 +195,14 @@ function alternarPlay() {
   btn.textContent = pausado ? "⏸ Pausar" : "▶ Continuar";
 }
 function reiniciar() {
-  videos.forEach(v => { v.currentTime = 0; v.play(); });
+  principais.forEach(v => { v.currentTime = 0; v.play(); });
+  alunos.forEach((v, i) => { defasarAluno(v, i); v.play(); });
   document.getElementById("btnPlay").textContent = "⏸ Pausar";
 }
 function alternarMudo() {
   const btn = document.getElementById("btnMudo");
-  const mudo = videos[0].muted;
-  videos.forEach(v => v.muted = !mudo);
+  const mudo = principais[0].muted;
+  principais.forEach(v => v.muted = !mudo);
   btn.textContent = mudo ? "🔊 Sem som" : "🔇 Com som";
 }
 document.getElementById("btnPlay").onclick = alternarPlay;
@@ -223,11 +220,14 @@ function alternarVista() {
 document.getElementById("btnVista").onclick = alternarVista;
 
 // erro em qualquer vídeo -> placeholder nas superfícies daquele arquivo
-for (const v of videos) {
+for (const v of principais) {
   v.addEventListener("error", () => {
     document.querySelectorAll(`[data-arquivo="${FONTES[v.id]}"]`)
       .forEach(s => s.classList.add("falha"));
   });
+}
+for (const v of alunos) {
+  v.addEventListener("error", () => v.closest(".surf").classList.add("falha"));
 }
 
 window.addEventListener("load", iniciarVideos);
