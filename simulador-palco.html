@@ -33,7 +33,7 @@
   .topbar h1 span { color: var(--laranja); }
   .viewport { flex: 1; display: grid; place-items: center; padding: 24px 12px; }
   .scene { position: relative; }
-  .stage { position: relative; }
+  .stage { position: relative; transform-style: preserve-3d; }
   .controls {
     display: flex; gap: 10px; align-items: center; justify-content: center;
     padding: 10px; background: rgba(4, 12, 24, .65);
@@ -52,7 +52,7 @@
     height: calc(var(--m) * 6.2);
   }
   .surf {
-    position: absolute; overflow: hidden;
+    position: absolute;
     background: #000; border: 2px solid #16273f;
     box-shadow: 0 0 24px rgba(240, 125, 0, .12), inset 0 0 8px #000;
   }

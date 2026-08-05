@@ -70,6 +70,9 @@ final settle to static frame" + texto final "senado.leg.br/jovemsenador".
 2. Normalizar clipes: `ffmpeg -i clip.mp4 -vf "scale=1534:768:flags=lanczos,fps=30" -an clipN_led.mp4`
 3. Concat por lista (`concat demuxer`) seguindo a linha do tempo:
    B1 00:00–01:00 · B2 01:00–02:00 · B3 02:00–03:15 · B4 03:15–04:15.
+   Cada clipe é estendido para preencher a janela do seu bloco via loop
+   (`-stream_loop`) ou hold do último frame (`tpad=stop_mode=clone`), até
+   completar a duração do bloco.
 4. Saída: `manifesto_tela_central_1534x768.mp4` (+ 1 MP4 por bloco).
 5. Validar no simulador: trocar `FONTES.vPrincipal` para o novo arquivo.
 
