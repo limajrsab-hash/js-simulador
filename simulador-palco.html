@@ -90,6 +90,33 @@
     color: var(--laranja); background: repeating-linear-gradient(
       45deg, #0a1526, #0a1526 8px, #0e1c31 8px, #0e1c31 16px);
   }
+  /* perspectiva 3D e ambientação do Salão Negro */
+  .viewport { perspective: 1700px; perspective-origin: 50% 42%; }
+  .scene { transition: transform .8s ease; transform-style: preserve-3d; }
+  body.view-perspectiva .scene {
+    transform: rotateX(6deg) rotateY(-16deg) translateZ(-40px);
+  }
+  body.view-perspectiva .surf { box-shadow: 0 0 34px rgba(240,125,0,.2), inset 0 0 8px #000; }
+  /* leque das verticais na perspectiva */
+  body.view-perspectiva .v1 { transform: rotateY(32deg); }
+  body.view-perspectiva .v2 { transform: rotateY(22deg); }
+  body.view-perspectiva .v3 { transform: rotateY(12deg); }
+  body.view-perspectiva .v4 { transform: rotateY(-12deg); }
+  body.view-perspectiva .v5 { transform: rotateY(-22deg); }
+  body.view-perspectiva .v6 { transform: rotateY(-32deg); }
+  /* ambientação: piso refletido + tapete + treliça sugerida */
+  .piso { position: absolute; left: -8%; right: -8%; top: calc(var(--m) * 5.7);
+          height: calc(var(--m) * 1.6);
+          background: linear-gradient(#0c1a2e 0%, #04101f 90%); opacity: .9; }
+  .tapete { position: absolute; left: 46%; width: 8%; top: calc(var(--m) * 5.7);
+            height: calc(var(--m) * 1.6);
+            background: linear-gradient(#5e1414, #340808); }
+  .trelica { position: absolute; width: calc(var(--m) * .18);
+             top: 0; height: calc(var(--m) * 5.2);
+             background: repeating-linear-gradient(0deg, #202b3a 0 10px, #0d1520 10px 20px);
+             border: 1px solid #2a3950; }
+  .trelica.esq { left: calc(var(--m) * 2.6); }
+  .trelica.dir { right: calc(var(--m) * 2.6); }
 </style>
 </head>
 <body class="view-frontal">
@@ -98,6 +125,10 @@
   </header>
   <main class="viewport">
     <div class="scene">
+      <div class="piso"></div>
+      <div class="tapete"></div>
+      <div class="trelica esq"></div>
+      <div class="trelica dir"></div>
       <div class="stage">
   <div class="surf testeira" data-arquivo="Testeira 1.mp4">
     <video id="vTesteira" muted loop playsinline></video>
@@ -179,6 +210,16 @@ function alternarMudo() {
 document.getElementById("btnPlay").onclick = alternarPlay;
 document.getElementById("btnReiniciar").onclick = reiniciar;
 document.getElementById("btnMudo").onclick = alternarMudo;
+
+function alternarVista() {
+  const b = document.body, btn = document.getElementById("btnVista");
+  const paraPerspectiva = b.classList.contains("view-frontal");
+  b.classList.toggle("view-frontal", !paraPerspectiva);
+  b.classList.toggle("view-perspectiva", paraPerspectiva);
+  btn.textContent = paraPerspectiva ? "Ver vista frontal" : "Ver em perspectiva";
+  btn.classList.toggle("ativo", paraPerspectiva);
+}
+document.getElementById("btnVista").onclick = alternarVista;
 
 // erro em qualquer vídeo -> placeholder nas superfícies daquele arquivo
 for (const v of videos) {
