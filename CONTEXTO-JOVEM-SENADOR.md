@@ -155,6 +155,43 @@ Fonte: release oficial `js26_release_a4_aa.pdf`, páginas *Apresentação*,
 | Origem dos selecionados (2025) | **8 em cada 10** viviam em cidades do interior |
 | Idade máxima | 19 anos completos até 31/12 do ano da edição |
 
+### Dados próprios de 2026 (o que já foi publicado)
+
+Levantados nas notícias do site em 05/08/2026. **Importante:** os números de
+*participação* de 2026 (escolas e estudantes inscritos) ainda não foram
+divulgados — o release de fevereiro cita os de 2025 justamente porque o
+concurso estava em curso. O que existe de 2026 é:
+
+| Dado de 2026 | Valor | Fonte |
+| --- | --- | --- |
+| Tema | "Democracia nas redes sociais: como construir um debate saudável" | Release JS26; lançado em Plenário em 09/12/2025 |
+| Redações finalistas avaliadas pelo Senado | **81** (dos 26 estados e do DF) | Notícia de 08/06/2026 |
+| Comissão Julgadora | **9 servidores** de Conleg, SGM, ILB, Secom e Segraf | Notícia de 08/06/2026 |
+| Critério de correção | Modelo das **5 competências do Enem/Inep**, adaptado ao programa | Notícia de 08/06/2026 |
+| Cursos de graduação da Unesp que aceitam o programa no ingresso | **33** (humanas, biológicas e exatas), no processo de 2026 | Notícia de 09/03/2026 |
+| Semana de Vivência Legislativa | **17 a 21 de agosto de 2026** | Release JS26 |
+
+**A porta da universidade.** Desde 2020 a **Unesp** inclui o Jovem Senador no
+*Processo Seletivo Olimpíadas Científicas*, uma das modalidades de acesso à
+graduação: concorre-se por histórico escolar + premiação. Em 2022 a jovem
+senadora do Amapá, **Quéren Hapuque**, entrou em Direito por essa via. A
+reitora Maysa Furlan e o chefe de serviço do programa, George Cardim, tratam a
+ampliação de parcerias com universidades como meta declarada.
+
+**A festa surpresa.** O anúncio dos vencedores é deliberadamente programado
+para que as escolas preparem uma **festa surpresa** — muitas vezes em festa
+junina ou cerimônia, com professores, familiares e a comunidade escolar
+(George Cardim, notícia de 08/06/2026). É o detalhe humano mais forte do
+programa e não aparece em nenhuma peça institucional.
+
+**Frutos que passaram do Senado.** Além da proposta transformada em PLS em
+16/04/2024, duas seguiram adiante para a **Câmara dos Deputados** em outubro de
+2024: o *Mês da Valorização da Cultura Brasileira* e o projeto de *monitoria no
+ensino médio*. A CDH também acatou a criação do **"Minuto da Cidadania"**.
+
+**Alcance internacional.** Em novembro de 2025, jovens senadores levaram a voz
+da juventude e da Amazônia à **COP 30**.
+
 ### Edição 2026 — em curso
 
 - **Tema:** *"Democracia nas redes sociais: como construir um debate saudável"*

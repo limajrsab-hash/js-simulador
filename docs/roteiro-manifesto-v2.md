@@ -71,22 +71,23 @@ setenta mil para vinte e sete. Os números do programa ditos como poesia.
 
 | Superfície | Conteúdo |
 | --- | --- |
-| **Principal** | O mapa do Brasil se preenchendo de pontos de luz — um por escola — até 4.202 pontos acesos. Os pontos se condensam no número **170.000**, que então se contrai até **27**. O mapa permanece ao fundo, respirando. |
+| **Principal** | O funil, em cartelas tipográficas grandes sobre o mapa do Brasil ao fundo: **4.202** escolas → **170.000** estudantes → **2.000.000** desde 2008 → *"o maior concurso de redação com premiação do Brasil"* → **81** redações que chegaram à etapa final **em 2026** → **27**. Fecha em *"oito em cada dez vieram do interior"*. |
 | **Testeira** | Bandeiras dos 26 estados e do DF correndo horizontalmente (asset `tela_bandeiras.mp4`). |
 | **Verticais** | **O coro.** Os seis painéis viram uma parede de rostos de estudantes — cada painel um jovem diferente, com nome e estado em tipografia limpa. Trocas em ritmo constante, nunca simultâneas (asset `Vídeo Tela Alunos.mp4`, defasado). |
 | **Rodapé** | Contadores subindo em tempo real: `4.202 ESCOLAS` → `170.000 ESTUDANTES` → `2.000.000 DESDE 2008`. |
 | **Áudio** | Batida eletrônica sutil entra e cresce. Camada de vozes ao fundo — muitas, indistintas, como uma sala cheia. |
 
 **Locução** *(o ritmo acelera; cada número tem uma pausa antes)*
-> "Neste ano, a pergunta chegou a quatro mil, duzentas e duas escolas.
+> "A pergunta chegou a quatro mil, duzentas e duas escolas.
 > Cento e setenta mil estudantes sentaram para escrever.
 > Desde 2008, foram dois milhões.
 > É o maior concurso de redação com premiação do Brasil.
 >
-> Dessas cento e setenta mil folhas, vinte e sete chegam até aqui.
+> Neste ano, oitenta e uma redações chegaram à etapa final.
+> Vinte e sete chegaram até aqui.
 > Uma de cada estado. Uma do Distrito Federal.
 > Oito em cada dez vieram do interior.
-> E, no ano passado, vinte e uma das vinte e sete foram escritas por meninas."
+> E, na última edição, vinte e uma das vinte e sete foram escritas por meninas."
 
 ---
 
@@ -127,7 +128,7 @@ verdade — com data. Só depois disso a árvore aparece, agora merecida.
 
 | Superfície | Conteúdo |
 | --- | --- |
-| **Principal** | Painel de votação do Plenário jovem se acendendo em verde. Corta para o documento oficial, em close, com o carimbo de tramitação: **"TRANSFORMADA EM PROJETO DE LEI DO SENADO — 16/04/2024"**. A tela então escurece e as letras Baskerville sobem e formam a árvore dourada. Sob ela: a logomarca completa e `senado.leg.br/jovemsenador`. |
+| **Principal** | Painel de votação do Plenário jovem se acendendo em verde. Corta para o documento oficial, em close, com o carimbo de tramitação: **"TRANSFORMADA EM PROJETO DE LEI DO SENADO — 16/04/2024"**. Cartela seca: **"E SEGUIU PARA A CÂMARA DOS DEPUTADOS"**. Segunda cartela, sem locução: **"33 CURSOS DA UNESP ACEITAM O JOVEM SENADOR NO INGRESSO"**. A tela então escurece e as letras Baskerville sobem e formam a árvore dourada. Sob ela: a logomarca completa e `senado.leg.br/jovemsenador`. |
 | **Testeira** | Marca institucional **SENADO FEDERAL**, centrada e estática. |
 | **Verticais** | A árvore símbolo estilizada em dourado nas seis telas — colunas luminosas emoldurando o palco. |
 | **Rodapé** | Assinatura `JOVEM SENADOR 2026`. |
@@ -138,6 +139,7 @@ verdade — com data. Só depois disso a árvore aparece, agora merecida.
 >
 > Em dezesseis de abril de dois mil e vinte e quatro, uma ideia nascida nesta
 > simulação deixou de ser simulação: virou Projeto de Lei do Senado.
+> E seguiu para a Câmara dos Deputados.
 > Não é ensaio. É legislatura.
 >
 > *(pausa)*
