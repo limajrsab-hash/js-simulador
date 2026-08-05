@@ -219,6 +219,14 @@ function alternarVista() {
 }
 document.getElementById("btnVista").onclick = alternarVista;
 
+// página oculta suspende mídia; ao voltar a ficar visível, retoma se o estado é "tocando"
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" &&
+      document.getElementById("btnPlay").textContent.includes("Pausar")) {
+    videos.forEach(v => v.play().catch(() => {}));
+  }
+});
+
 // erro em qualquer vídeo -> placeholder nas superfícies daquele arquivo
 for (const v of principais) {
   v.addEventListener("error", () => {
