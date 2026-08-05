@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador — Painéis de LED · Jovem Senador 2026</title>
+<style>
+  :root {
+    --m: 96px;                 /* pixels por metro (escala física) */
+    --azul-profundo: #071B36;
+    --azul-senado:  #0A2E5C;
+    --laranja:      #F07D00;
+    --dourado:      #E3A82B;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: radial-gradient(ellipse at 50% 30%, #10233f 0%, var(--azul-profundo) 55%, #04101f 100%);
+    color: #dce6f2;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 18px;
+    background: rgba(4, 12, 24, .65);
+    border-bottom: 2px solid var(--laranja);
+  }
+  .topbar h1 { font-size: 15px; font-weight: 600; letter-spacing: .04em; }
+  .topbar h1 span { color: var(--laranja); }
+  .viewport { flex: 1; display: grid; place-items: center; padding: 24px 12px; }
+  .scene { position: relative; }
+  .stage { position: relative; }
+  .controls {
+    display: flex; gap: 10px; align-items: center; justify-content: center;
+    padding: 10px; background: rgba(4, 12, 24, .65);
+    border-top: 1px solid #1d3a5f;
+  }
+  .controls button {
+    background: var(--azul-senado); color: #fff; border: 1px solid #2c5f96;
+    padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+  }
+  .controls button:hover { background: #12467e; }
+  .controls button.ativo { background: var(--laranja); border-color: var(--dourado); }
+</style>
+</head>
+<body class="view-frontal">
+  <header class="topbar">
+    <h1>JOVEM <span>SENADOR</span> 2026 · Simulador dos Painéis de LED — Salão Negro</h1>
+  </header>
+  <main class="viewport">
+    <div class="scene">
+      <div class="stage"><!-- superfícies entram na Task 2 --></div>
+    </div>
+  </main>
+  <footer class="controls"><!-- controles entram na Task 3 --></footer>
+  <script>
+    // preenchido nas Tasks 2-4
+  </script>
+</body>
+</html>
