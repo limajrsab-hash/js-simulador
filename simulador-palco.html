@@ -82,6 +82,14 @@
             letter-spacing: .05em; white-space: nowrap; }
   .medida::before { content: "⟵ "; } .medida::after { content: " ⟶"; }
   body:not(.view-frontal) .medida { display: none; }
+  .surf.falha video, .surf.falha canvas { display: none; }
+  .surf.falha::after {
+    content: "vídeo não encontrado:\A" attr(data-arquivo);
+    white-space: pre; display: grid; place-items: center; text-align: center;
+    position: absolute; inset: 0; font-size: 11px; line-height: 1.5;
+    color: var(--laranja); background: repeating-linear-gradient(
+      45deg, #0a1526, #0a1526 8px, #0e1c31 8px, #0e1c31 16px);
+  }
 </style>
 </head>
 <body class="view-frontal">
@@ -115,7 +123,13 @@
 </div>
     </div>
   </main>
-  <footer class="controls"><!-- controles entram na Task 3 --></footer>
+  <footer class="controls">
+  <button id="btnPlay">⏸ Pausar</button>
+  <button id="btnReiniciar">↺ Reiniciar</button>
+  <button id="btnMudo">🔇 Com som</button>
+  <span style="width:24px"></span>
+  <button id="btnVista">Ver em perspectiva</button>
+</footer>
   <script>
 const FONTES = {
   vPrincipal: "Telão - Identidade Visual.mp4",
@@ -144,6 +158,34 @@ function pintarVerticais() {
     }
     requestAnimationFrame(quadro);
   })();
+}
+
+function alternarPlay() {
+  const btn = document.getElementById("btnPlay");
+  const pausado = videos[0].paused;
+  videos.forEach(v => pausado ? v.play() : v.pause());
+  btn.textContent = pausado ? "⏸ Pausar" : "▶ Continuar";
+}
+function reiniciar() {
+  videos.forEach(v => { v.currentTime = 0; v.play(); });
+  document.getElementById("btnPlay").textContent = "⏸ Pausar";
+}
+function alternarMudo() {
+  const btn = document.getElementById("btnMudo");
+  const mudo = videos[0].muted;
+  videos.forEach(v => v.muted = !mudo);
+  btn.textContent = mudo ? "🔊 Sem som" : "🔇 Com som";
+}
+document.getElementById("btnPlay").onclick = alternarPlay;
+document.getElementById("btnReiniciar").onclick = reiniciar;
+document.getElementById("btnMudo").onclick = alternarMudo;
+
+// erro em qualquer vídeo -> placeholder na superfície correspondente
+for (const v of videos) {
+  v.addEventListener("error", () => {
+    const surf = v.closest(".surf");
+    if (surf) surf.classList.add("falha");
+  });
 }
 
 window.addEventListener("load", iniciarVideos);
