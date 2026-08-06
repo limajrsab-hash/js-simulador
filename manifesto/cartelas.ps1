@@ -134,5 +134,48 @@ $partes4.Add((Texto "COMO VIA DE INGRESSO NA GRADUA{C,}{A~}O" $SANS 38 $DOURADO 
 
 Renderizar $partes4 22 "b4_provas.mp4"
 
+# =========================================================================
+# AS PALAVRAS QUE VIRARAM PROPOSTA
+# Releitura do trecho de palavras-chave do roteiro original: em vez de
+# adjetivos flutuando, cada palavra carrega uma proposta real dos jovens
+# senadores. O adjetivo vira prova.
+# =========================================================================
+Write-Host "Gerando o bloco das palavras..."
+
+$palavras = @(
+  @{ p = "CIDADANIA"
+     proposta = "Minuto da Cidadania"
+     nota = "ACATADO PELA CDH" },
+  @{ p = "EDUCA{C,}{A~}O"
+     proposta = "Vale-Livro para a rede p{u'}blica"
+     nota = "PROPOSTA DOS JOVENS SENADORES" },
+  @{ p = "MEIO AMBIENTE"
+     proposta = "Selo Eco Brasil de responsabilidade socioambiental"
+     nota = "PROPOSTA DOS JOVENS SENADORES" },
+  @{ p = "SA{U'}DE"
+     proposta = "Rotulagem dos alimentos ultraprocessados"
+     nota = "PROPOSTA DOS JOVENS SENADORES" },
+  @{ p = "DEMOCRACIA"
+     proposta = "Veda{c,}{a~}o do anonimato nas redes"
+     nota = "PROPOSTA DOS JOVENS SENADORES" },
+  @{ p = "CULTURA"
+     proposta = "M{e^}s Nacional de Valoriza{c,}{a~}o da Cultura Brasileira"
+     nota = "VIROU PROJETO DE LEI E SEGUIU PARA A C{A^}MARA" }
+)
+
+$partesP = New-Object System.Collections.Generic.List[string]
+$t = 0.0
+# cuidado: nao usar $w como variavel de laco - PowerShell ignora
+# maiusculas e ela sobrescreveria $W, a largura do quadro.
+foreach ($item in $palavras) {
+  $t1 = $t + 6
+  $partesP.Add((Texto $item.p        $SANS  118 $LARANJA 190 $t $t1))
+  $partesP.Add((Filete 350 $t $t1 240 $DOURADO))
+  $partesP.Add((Texto $item.proposta $SERIF  50 "white"  420 $t $t1))
+  $partesP.Add((Texto $item.nota     $SANS   30 $DOURADO 545 $t $t1))
+  $t = $t1
+}
+Renderizar $partesP 36 "b3_palavras.mp4"
+
 Write-Host ""
 Write-Host "Pronto."

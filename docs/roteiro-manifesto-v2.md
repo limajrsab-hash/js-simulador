@@ -28,6 +28,39 @@ entra no fim, quando a narrativa já a mereceu.
 3. As quatro superfícies contam a mesma história em camadas — nunca competem.
 4. O fecho preserva a frase-assinatura do programa, que já é patrimônio dele.
 
+### A árvore é a espinha, não a moldura
+
+No roteiro anterior a árvore abria e fechava o filme, e no meio sumia. Aqui ela
+**cresce através dele**, um estágio por bloco — exatamente como o próprio
+programa descreve: *"Uma árvore nasce da semente, precisa de cuidados até que
+possa ter o tronco forte, as raízes profundas e a copa frondosa."*
+
+| Bloco | Estágio da árvore | O que a narrativa faz |
+| --- | --- | --- |
+| 1 | **Raiz** — sistema de raízes de letras serifadas, um broto rompendo a superfície | A origem: a folha em branco |
+| 2 | **Tronco** — letras sobem e formam o tronco, primeiros galhos | A escala: os dados, os 27 |
+| 3 | **Galhos** — abrem-se largos, primeiras folhas de letras | A casa, os nomes, as palavras que viraram proposta |
+| 4 | **Copa cheia** — dourada, luminosa, plena | Os registros da vivência e o manifesto |
+
+As raízes são **idênticas** em todos os estágios (os quatro quadros foram
+gerados a partir do mesmo original): o que muda é só o que cresce acima delas.
+É o que faz a leitura ser de *crescimento*, e não de quatro árvores diferentes.
+
+### As palavras-chave, na outra perspectiva
+
+O roteiro original piscava `CIDADANIA · AUTONOMIA · DIÁLOGO · FUTURO ·
+TRANSFORMAÇÃO` nas verticais — adjetivos sem lastro. Aqui cada palavra **carrega
+uma proposta real dos jovens senadores**, e o adjetivo vira prova:
+
+| Palavra | Proposta real | Situação |
+| --- | --- | --- |
+| CIDADANIA | Minuto da Cidadania | Acatado pela CDH |
+| EDUCAÇÃO | Vale-Livro para a rede pública | Proposta dos jovens senadores |
+| MEIO AMBIENTE | Selo Eco Brasil de responsabilidade socioambiental | Proposta dos jovens senadores |
+| SAÚDE | Rotulagem dos alimentos ultraprocessados | Proposta dos jovens senadores |
+| DEMOCRACIA | Vedação do anonimato nas redes | Proposta dos jovens senadores |
+| CULTURA | Mês Nacional de Valorização da Cultura Brasileira | Virou projeto de lei e seguiu para a Câmara |
+
 ---
 
 ## Superfícies
